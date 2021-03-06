@@ -2,20 +2,31 @@
 
 body{
   font-family: 'Hind', sans-serif;
+  text-align: justify;
   color:#27282c;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.purple{
+  color: #4054BB;
+}
+
+img{
+  max-width: 100%;
 }
 
 header{
   background-color: #4054BB;
-  color:white;
-  text-align: center;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family: 'Ubuntu', sans-serif;
   padding-bottom: 1rem ;
   font-weight: bold;
@@ -31,17 +42,45 @@ h2{
 }
 
 h3{
-  font-size: 1.5em;
+  font-size: 1.8em;
   color:#353742;
   margin-bottom: 1.5rem;
 }
 
-.header-left, .header-right{
-  margin: 4rem 2rem;
+h4{
+  font-size:1.5em;
+}
+
+p{
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+ul li{
+  font-size:1.4em;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.wrapper{
+  padding: 5rem 3rem 4rem;
+  width: 70%;
+  margin: auto;
+}
+
+.triangle{
+  color: #4054BB;
+  font-weight: bold;
+}
+
+.header{
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-right_img{
-  max-width: 100%;
   height: 200px;
   margin-bottom: 2rem;
   border-radius : 50%;
@@ -49,7 +88,6 @@ h3{
 
 .header-right_icons_wrapper{
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 .header-right_icons .fas, .header-right_icons .fab{
@@ -63,32 +101,126 @@ h3{
   opacity: 0.5;
 }
 
-/* section{
-  padding: 2rem;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 2rem;
-} */
-
-.wrapper{
-  padding: 3rem;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-
 .about{
   background-color: white;
 }
 
 .about_content{
-  font-size: 1.1em;
   text-align: justify;
-  width: 60%;
-  margin-left: 10rem;
-  line-height: 2em;
+  margin-bottom: 1rem;
 }
 
-.projects{
-  background-color: #4054bb69;
+.projects, .education, .hobbies{
+  background-color: #4054bb25;
+}
+
+.project_board{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project_item{
+  width: 45%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.project_title{
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.project_img-link{
+  display:block;
+  text-align: center;
+}
+.project_img{
+  margin-bottom: 1rem;
+}
+
+.project_img:hover{
+  opacity:0.6;
+}
+
+.project_link-git{
+  text-decoration: underline;
+}
+
+.project_link-git:hover{
+  color: #4054BB;
+}
+
+.project_link-web{
+  text-decoration: underline;
+}
+
+.project_link-web:hover{
+  color: #4054BB;
+}
+
+.project_content{
+  overflow:auto;
+}
+
+.project_content p{
+  margin-bottom: 1rem;
+}
+
+.project_content p em{
+  font-weight: bold;
+}
+
+.project_content p .fas, .project_content p .fab{
+  font-size: 2em;
+  color: #4054BB;;
+  margin-left: 1rem;
+}
+
+.project_content p .fas:hover, .project_content p .fab:hover{
+  opacity: 0.5;
+}
+
+.skills_board{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills_block{
+  width: 260px;
+}
+
+.skills_block h4{
+  margin-bottom: 1.2rem;
+}
+
+.skills_image{
+  text-align: center;
+}
+
+.education_content, .experience_content{
+  margin-bottom: 2rem;
+}
+
+.education_content h4, .experience_content h4{
+  margin-bottom: 0.5rem;
+}
+
+.education_content p, .education_content ul, .experience_content p, .experience_content ul{
+  display: block;
+  margin-bottom: 1rem;
+}
+.education_content-date, .experience_content-date{
+  margin-bottom: 2rem;
+}
+
+@media all and (max-width: 1280px){
+  .project_item{
+    width: 100%;
+  }
 }
