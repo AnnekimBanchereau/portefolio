@@ -222,17 +222,23 @@ ul li{
   margin-bottom: 2rem;
 }
 
-@media all and (max-width: 1024px){
+
+@media all and (max-width: 1200px){
   .project_item{
     width: 100%;
-  }
+  } 
 
   .header-left h1, .header-left h2, .header-left p{
     text-align: center;
   }
+  
   .header-right{
-    margin:1rem auto 0;
+    margin: 1rem auto 0;
     text-align: center;
+  }
+
+  .header-left{
+    margin:auto;
   }
 }
 
