@@ -30,6 +30,7 @@ h1, h2, h3, h4{
   font-family: 'Ubuntu', sans-serif;
   padding-bottom: 1rem ;
   font-weight: bold;
+  text-align: left;
 }
 
 h1{
@@ -52,12 +53,12 @@ h4{
 }
 
 p{
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.5em;
 }
 
 ul li{
-  font-size:1.4em;
+  font-size:1.2em;
   line-height: 1.5em;
   margin-bottom: 1rem;
 }
@@ -127,6 +128,7 @@ ul li{
   border-radius: 10px;
   margin: 0 auto 2rem;
   text-align: left;
+  font-size:1em;
 }
 
 .project_title{
@@ -169,6 +171,7 @@ ul li{
 
 .project_content p{
   margin-bottom: 1rem;
+  font-size:1em;
 }
 
 .project_content p em{
@@ -219,8 +222,28 @@ ul li{
   margin-bottom: 2rem;
 }
 
-@media all and (max-width: 1280px){
+@media all and (max-width: 1024px){
   .project_item{
     width: 100%;
+  }
+
+  .header-left h1, .header-left h2, .header-left p{
+    text-align: center;
+  }
+  .header-right{
+    margin:1rem auto 0;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 800px){
+  .wrapper{
+    width:100%;
+  }
+}
+
+@media all and (max-width: 600px){
+  .wrapper{
+    padding: 3rem 1.5rem;
   }
 }
