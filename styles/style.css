@@ -265,6 +265,14 @@ ul li{
   .wrapper--header{
     padding: 3rem 1.5rem;
   }  
+  .header_icons_wrapper{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+  }
+  .header_icons .fas, .header_icons .fab{
+    margin-right: 0;
+  }
   .wrapper{
     padding: 3rem 1.5rem;
   }
